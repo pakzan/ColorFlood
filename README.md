@@ -1,2 +1,2 @@
 # ColorFlood1
-test
+An Android Game with colorful territory.
