@@ -1,4 +1,4 @@
-# ColorFlood1
+# ColorFlood
 An Android Game with colorful territory.
 
 Each player start with a different color.
