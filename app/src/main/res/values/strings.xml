@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">ColorFlood1</string>
-
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">ColorFlood</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_help">Help</string>
+    <string name="title_activity_settings">SettingsActivity</string>
 </resources>

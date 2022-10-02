@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ColorFlood1.iml" filepath="$PROJECT_DIR$/ColorFlood1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ColorFlood1.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ColorFlood1.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ColorFlood1.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ColorFlood1.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ColorFlood1.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ColorFlood1.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ColorFlood1.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ColorFlood1.app.unitTest.iml" />
     </modules>
   </component>
 </project>

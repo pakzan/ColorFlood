@@ -1,61 +1,63 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:weightSum="2"
+    android:id="@+id/ll_screen"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
     android:gravity="center"
-    android:background="#ffffff">
+    android:orientation="vertical"
+    android:weightSum="2">
 
     <TextView
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Color Flood"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="50dp"
+        android:fontFamily="casual"
         android:gravity="center"
-        android:alpha="150" />
+        android:text="Color Flood"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60sp"
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:layout_gravity="center_horizontal"
-        android:gravity="top|center_horizontal">
+        android:layout_weight="1"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play"
-        android:id="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="20dp"
-        android:layout_margin="10dp" />
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#80FFFFFF"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:text="Play"
+            android:textSize="20sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Option"
-        android:id="@+id/button2"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:textSize="20dp"
-        android:layout_margin="10dp" />
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#80FFFFFF"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:text="Settings"
+            android:textSize="20sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="How To Play"
-        android:id="@+id/help"
-        android:textSize="20dp"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp" />
+        <Button
+            android:id="@+id/btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#80FFFFFF"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:text="How To Play"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorNeutral">#CCCCCC</color>
+    <color name="colorOne">#E91E63</color>
+    <color name="colorTwo">#9C27B0</color>
+    <color name="colorThree">#3F51B5</color>
+    <color name="colorFour">#03A9F4</color>
+    <color name="colorFive">#009688</color>
+    <color name="colorSix">#8BC34A</color>
+    <color name="colorSeven">#FFEB3B</color>
+    <color name="colorEight">#FFC107</color>
+    <color name="colorNine">#FF5722</color>
+    <color name="colorTen">@android:color/holo_red_dark</color>
+</resources>

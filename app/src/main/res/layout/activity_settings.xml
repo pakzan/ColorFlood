@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
     android:weightSum="7"
     android:gravity="center_vertical"
@@ -14,7 +15,7 @@
         android:text="Settings"
         android:layout_margin="5dp"
         android:layout_weight="1"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:layout_gravity="center"
         android:gravity="center" />
 
@@ -31,19 +32,19 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="No. of Blocks :"
-            android:id="@+id/BoxNum"
             android:layout_margin="5dp"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
 
         <EditText
+            android:id="@+id/et_box_num_x"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:inputType="number"
             android:ems="10"
-            android:id="@+id/BoxNumX"
-            android:text="15"
             android:gravity="bottom|center_horizontal"
-            android:editable="true" />
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text="15"
+            android:autofillHints="Horizontal No." />
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,14 +56,15 @@
             android:layout_margin="5dp" />
 
         <EditText
+            android:id="@+id/et_box_num_y"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:inputType="number"
             android:ems="10"
-            android:id="@+id/BoxNumY"
-            android:text="15"
             android:gravity="bottom|center_horizontal"
-            android:editable="true" />
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text="15"
+            android:autofillHints="Vertical No." />
     </LinearLayout>
 
 
@@ -74,22 +76,22 @@
         android:orientation="horizontal"
         android:transitionGroup="true"
         android:gravity="center"
-        android:id="@+id/playType">
+        android:id="@+id/rg_play_type">
 
         <RadioButton
+            android:id="@+id/rb_with_ai"
             android:layout_width="wrap_content"
             android:layout_height="68dp"
-            android:text="Player vs AI"
-            android:checked="false"
-            android:id="@+id/player"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            android:text="Player vs AI" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:text="2 Players"
-            android:id="@+id/twoPlayer"
+            android:id="@+id/rb_two_players"
             android:checked="false"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp" />
@@ -98,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:text="4 Players"
-            android:id="@+id/fourPlayer"
+            android:id="@+id/rb_four_players"
             android:checked="false"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp" />
@@ -111,7 +113,7 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:gravity="center"
-        android:id="@+id/numColor">
+        android:id="@+id/rg_color_num">
 
         <TextView
             android:layout_width="wrap_content"
@@ -120,25 +122,28 @@
             android:text="No. of Colors :"
             android:id="@+id/colorNo"
             android:layout_margin="5dp"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
 
         <RadioButton
+            android:id="@+id/rb_six_colors"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6"
-            android:id="@+id/six"
-            android:checked="false"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="6" />
 
         <RadioButton
+            android:id="@+id/rb_ten_colors"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10"
-            android:id="@+id/ten"
-            android:checked="false"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            android:minHeight="48dp"
+            android:text="10" />
     </RadioGroup>
 
     <RadioGroup
@@ -148,34 +153,37 @@
         android:layout_gravity="center"
         android:orientation="horizontal"
         android:gravity="center"
-        android:id="@+id/mode">
+        android:id="@+id/rg_play_mode">
 
         <RadioButton
+            android:id="@+id/rb_easy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Easy"
-            android:id="@+id/easy"
-            android:checked="false"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            android:minHeight="48dp"
+            android:text="Easy" />
 
         <RadioButton
+            android:id="@+id/rb_medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medium"
-            android:id="@+id/medium"
-            android:checked="false"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            android:minHeight="48dp"
+            android:text="Medium" />
 
         <RadioButton
+            android:id="@+id/rb_hard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hard"
-            android:id="@+id/hard"
-            android:checked="false"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            android:minHeight="48dp"
+            android:text="Hard" />
     </RadioGroup>
 
     <LinearLayout
@@ -192,12 +200,12 @@
             android:text="Brightness :"
             android:id="@+id/Brightness"
             android:layout_margin="5dp"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
 
         <SeekBar
             android:layout_width="149dp"
             android:layout_height="wrap_content"
-            android:id="@+id/brightness"
+            android:id="@+id/sb_brightness"
             android:layout_gravity="center"
             android:max="255"
             android:indeterminate="false" />
@@ -213,21 +221,25 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/btn_cancel"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OK"
-            android:id="@+id/ok"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cancel"
-            android:id="@+id/cancel"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp" />
-        </LinearLayout>
+            android:layout_marginRight="10dp"
+            android:text="Cancel"
+            android:textColor="#00796B" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="OK"
+            android:textColor="#00796B" />
+    </LinearLayout>
 </LinearLayout>
